@@ -29,10 +29,11 @@ def predict(birthday, today):
 
 
 def main():
-    st.title("Cyber Future Teller 🧙‍♀️")
+    st.set_page_config(page_title="Iching Fortune Teller", page_icon="☯️")
+    st.title("Iching Fortune Teller ☯️")
     # description
-    st.write("This is a cyber fortune-teller powered by the gpt-3.5-turbo-16k model. Using the cosmic vibes of the "
-             "day, it's here to unravel the mysteries of your life. Brace yourself for some AI-powered wisdom and a "
+    st.write("This is a iching fortune-teller powered by the gpt-3.5-turbo-16k model. Using the cosmic vibes of the "
+             "day, it's here to unravel the mysteries of your life. Brace yourself for some iching wisdom and a "
              "touch of digital divination!")
 
     API_KEY = st.text_input("API Key")
