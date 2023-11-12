@@ -13,13 +13,24 @@ def main():
 
     API_KEY = os.environ['OPENAI_API_KEY']
 
-    llm = ChatOpenAI(openai_api_key=API_KEY,temperature=0.9,model_name="gpt-3.5-turbo-16k")
-
     st.title("Cyber Future Teller")
+
+    llm = None
+
+    # upload api key
+    with st.sidebar:
+        st.subheader("enter your own API key")
+        api_key = st.text_input("API Key")
+        if st.button("Submit") and api_key:
+            with st.spinner("Saving..."):
+                API_KEY = api_key
+                st.write("recived API key")
+
+    llm = ChatOpenAI(openai_api_key=API_KEY, temperature=0.9, model_name="gpt-3.5-turbo-16k")
     d = st.date_input("When's your birthday", value=None)
     user_question = st.text_input("Please enter your question:")
 
-    if st.button("Answer") and user_question and d:
+    if st.button("Answer") and user_question and d and llm:
         with st.spinner("Processing..."):
             # iching get today's gua
             today = int(datetime.datetime.now().strftime("%Y%m%d"))
