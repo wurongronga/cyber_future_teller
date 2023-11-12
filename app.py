@@ -23,7 +23,7 @@ def main():
         with st.spinner("Processing..."):
             # iching get today's gua
             today = int(datetime.datetime.now().strftime("%Y%m%d"))
-            birthday = d.year * 10000 + d.month * 100 + d.day
+            birthday = int(str(d.year) + str(d.month) + str(d.day))
             predictions = iching.predict(birthday, today)
             # pass gua into model
             template = f"""作为一个易经解卦大师，你将基于推演起卦的结果回答客人的问题。
