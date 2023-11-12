@@ -1,21 +1,14 @@
 from dotenv import load_dotenv
-import os
-# from langchain.llms import OpenAI
 from langchain.chat_models import ChatOpenAI
 from langchain.prompts.chat import ChatPromptTemplate
 import datetime
 import streamlit as st
-from langchain.chains import LLMChain,SequentialChain
 from iching import iching
 
 def main():
     load_dotenv()  # take environment variables from .env.
 
-    API_KEY = os.environ['OPENAI_API_KEY']
-
     st.title("Cyber Future Teller")
-
-    llm = None
 
     # upload api key
     with st.sidebar:
