@@ -1,5 +1,5 @@
-# cyber_future_teller
-This is a cyber fortune-teller powered by the gpt-3.5-turbo-16k model. Using the cosmic vibes of the day, it's here to unravel the mysteries of your life. Brace yourself for some AI-powered wisdom and a touch of digital divination!
+# Iching Fortune Teller
+This is a iching fortune-teller powered by the gpt-3.5-turbo-16k model. Using the cosmic vibes of the day, it's here to unravel the mysteries of your life. Brace yourself for some iching wisdom and a touch of digital divination!
 
 :link: https://cyberfutureteller.streamlit.app/
 
