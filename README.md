@@ -5,9 +5,10 @@ This is a iching fortune-teller powered by the gpt-3.5-turbo-16k model. Using th
 
 1. provide your openai-api-key
 2. your birthday
-3. your confuse 
+3. your confuse
 
-![Screenshot 2023-11-11 at 7 22 25 PM](https://github.com/wurongronga/cyber_future_teller/assets/81877065/9ce5899b-d17b-4392-ac50-33cb67a5be68)
+![Screenshot 2023-11-11 at 8 31 19 PM](https://github.com/wurongronga/cyber_future_teller/assets/81877065/92d4f7e4-957f-4c71-a8d2-951ba23eb170)
+
 
 ### local deployment
 1. pull the repository
