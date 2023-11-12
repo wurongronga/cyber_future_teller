@@ -29,7 +29,11 @@ def predict(birthday, today):
 
 
 def main():
-    st.title("Cyber Future Teller")
+    st.title("Cyber Future Teller 🧙‍♀️")
+    # description
+    st.write("This is a cyber fortune-teller powered by the gpt-3.5-turbo-16k model. Using the cosmic vibes of the "
+             "day, it's here to unravel the mysteries of your life. Brace yourself for some AI-powered wisdom and a "
+             "touch of digital divination!")
 
     API_KEY = st.text_input("API Key")
     d = st.date_input("When's your birthday", value=None)
